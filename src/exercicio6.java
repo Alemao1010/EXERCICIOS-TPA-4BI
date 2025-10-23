@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class exercicio3 {
+public class exercicio6 {
 
 	public static void main(String[] args) {
 
@@ -8,7 +8,14 @@ public class exercicio3 {
 		        int x = sc.nextInt();
 		        System.out.print("Digite o valor de Y: ");
 		        int y = sc.nextInt();
-		        System.out.println(": " + (x * y));
+
+		        int temp = x;
+		        x = y;
+		        y = temp;
+
+		        System.out.println("Depois da troca:");
+		        System.out.println("X = " + x);
+		        System.out.println("Y = " + y);
 		        sc.close();
 		    }
 		}
